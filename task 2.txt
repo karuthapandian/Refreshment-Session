@@ -1,0 +1,22 @@
+4/6/24 Refreshment Session
+
+Task 1 
+
+Qns: Write a JS program to minus  2 numbers without using minus operator  
+
+Ans:
+<script>
+function subtract(x,y)
+{
+while(y!= 0)
+{
+let borrow = (~x) & y ;
+x = x ^ y;
+y=borrow << 1;
+}
+return x;
+}
+document.write("x-y is "+ subtract(x,y));
+</script>
+
+------------------------------------------
